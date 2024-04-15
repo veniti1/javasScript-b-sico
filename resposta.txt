@@ -1,0 +1,25 @@
+function determinarFaixaEtaria(categoria) {
+    switch (categoria.toUpperCase()) {
+        case 'A':
+            return "5 a 7 anos";
+        case 'B':
+            return "8 a 11 anos";
+        case 'C':
+            return "12 a 13 anos";
+        case 'D':
+            return "14 a 17 anos";
+        case 'E':
+            return "Maiores de 18 anos";
+        default:
+            return "Categoria inválida";
+    }
+}
+
+
+
+
+let categoria = prompt("Digite sua categoria:");
+
+let FaixaEtaria = determinarFaixaEtaria(categoria);
+
+alert(`Sua faixa etária é ${FaixaEtaria}`);
